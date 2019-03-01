@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proj nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoquillaza/guia-hoteles.git"
+  },
+  "author": "Arturo Moquillaza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amoquillaza/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/amoquillaza/guia-hoteles#readme"
+}
