@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Hello, world!</title>
   </head>
@@ -16,7 +17,7 @@
 	</div>
     
 	<div class="container">
-	  <div class="row">
+	  <div class="d-flex">
   	    <div class="col-sh-4"><p><h3>&iquestC&oacutemo funciona?</h3>
 		                             <p>Busca los hoteles de acuerdo a tu preferencia.</p> 
 		                     </p>		                         
@@ -32,28 +33,83 @@
 	  </div>
 	  <hr>
  
-	  <div class="row">
-  	    <div class="col-sm-3">
-			<h4>Hotel Barcelona</h4>
+	  <div class="d-flex flex-wrap flex-row-reverse">
+  	    <div class="card-hotel">
+			<div><h4>Hotel Barcelona</h4>
 			<p>Esta es una descripci&oacuten del Hotel Barcelona</p>
-			<button class="btn" href="#" role="button">Reservar</button>
+			</div>
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>
 		</div>
-  	    <div class="col-sm-3">
-			<h4>Hotel Buenos Aires</h4>
-			<p>Esta es una descripci&oacuten del Hotel Buenos Aires</p>
-			<button class="btn" href="#" role="button">Reservar</button>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel Buenos Aires</h4>
+				<p>Esta es una descripci&oacuten del Hotel Buenos Aires</p>
+			</div>	
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>
 		</div>
-  	    <div class="col-sm-3">
-			<h4>Hotel Lima</h4>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel Lima</h4>
 			<p>Esta es una descripci&oacuten del Hotel Lima</p>
-			<button class="btn" href="#" role="button">Reservar</button>
+			</div>	
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>	
 		</div>
-  	    <div class="col-sm-3">
-			<h4>Hotel Rio de Janeiro</h4>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel Rio de Janeiro</h4>
 			<p>Esta es una descripci&oacuten del Hotel Rio de Janeiro</p>
-			<button class="btn" href="#" role="button">Reservar</button>
+			</div>	
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>	
+		</div>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel La Paz</h4>
+			<p>Esta es una descripci&oacuten del Hotel La Paz</p>
+			</div>	
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>	
+		</div>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel Madrid</h4>
+			<p>Esta es una descripci&oacuten del Hotel Madrid</p>
+			</div>	
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>	
+		</div>
+  	    <div class="card-hotel d-flex flex-column justify-content-between">
+			<div><h4>Hotel San Pablo</h4>
+			<p>Esta es una descripci&oacuten del Hotel San Pablo</p>
+			</div>	 
+			<div><button class="btn btn-primary btn-reserva" href="#" role="button">Reservar</button>
+			</div>	
 		</div>
 	</div>
+	
+	<footer>
+	  <div class="row">
+  	    <div class="col-sm-4 d-flex flex-column">
+			<a href="https://www.facebook.com">Facebook</a>
+			<a href="https://www.facebook.com">Twitter</a>
+			<a href="https://www.facebook.com">Instagram</a>
+			<a href="https://www.facebook.com">Google+</a>
+		</div>
+  	    <div class="col-sm-4">
+			<address>
+			<h1>Oficina Central</h1>
+			<p>Tucuman 834, CABA, Argentina</p> 
+			<p>+54911111234567</p>
+			<p>contacto@guiahoteles.com</p>
+			</address>
+		</div>
+  	    <div class="col-sm-4 d-flex flex-column align-items-end">
+			<a href="https://www.facebook.com">Nosotros</a>
+			<a href="https://www.facebook.com">Precios</a>
+			<a href="https://www.facebook.com">Terminos y Condiciones</a>
+			<a href="https://www.facebook.com">Contacto</a>
+		</div>
+     </div>
+
+	</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
