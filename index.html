@@ -15,7 +15,7 @@
   <body>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#">Hoteles</a>
-		<button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSupportedContent" 
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -42,16 +42,28 @@
 		</ol>
 	  </nav>	
 
-	  <div class="d-flex">
-  	    <div class="col-sh-4"><p><h3>&iquestC&oacutemo funciona?</h3>
+	  <div class="row"> 
+		<div class="col-sm-4"> 
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">&iquestC&oacutemo funciona</button>
+		</div>		
+		<div class="col-sm-4">
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">&iquestD&oacutende puedo reservar?</button>	
+		</div>		
+		<div class="col-sm-4">
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">&iquestC&oacutemo pago</button>	
+		</div>
+	  </div>
+	  
+	  <div class="row">
+  	    <div class="col-sm-4 collapse multi-collapse" id="funciona"><p><h3>&iquestC&oacutemo funciona?</h3>
 		                             <p>Busca los hoteles de acuerdo a tu preferencia.</p> 
 		                     </p>		                         
 		</div>
-  	    <div class="col-sh-4"><p><h3>&iquestD&oacutende lo puedo reservar?</h3>
+  	    <div class="col-sm-4 collapse multi-collapse" id="reserva"><p><h3>&iquestD&oacutende lo puedo reservar?</h3>
 		                             <p>Elige la ciudad que te interese y luego realiza la reserva con tus datos.</p> 
 		                     </p>		                         
 		</div>
-  	    <div class="col-sh-4"><p><h3>&iquestC&oacutemo pago?</h3>
+  	    <div class="col-sm-4 collapse multi-collapse" id="pago"><p><h3>&iquestC&oacutemo pago?</h3>
 		                             <p>Utiliza tu tarjeta favorita.</p> 
 		                     </p>		                         
 		</div>
@@ -66,7 +78,7 @@
 				<h5 class="card-title">Hotel Barcelona</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel Barcelona</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -78,7 +90,7 @@
 				<h5 class="card-title">Hotel Buenos Aires</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel Buenos Aires</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -90,7 +102,7 @@
 				<h5 class="card-title">Hotel Lima</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel Lima</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -102,7 +114,7 @@
 				<h5 class="card-title">Hotel Rio de Janeiro</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel Rio de Janeiro</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -114,7 +126,7 @@
 			<h5 class="card-title">Hotel La Paz</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel La Paz</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -126,7 +138,7 @@
 				<h5 class="card-title">Hotel Madrid</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel Madrid</p>
 			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
 				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
@@ -137,13 +149,103 @@
 			<div class="card-body">
 				<h5 class="card-title">Hotel San Pablo</h5>
 				<p class="card-text">Esta es una descripci&oacuten del Hotel San Pablo</p>
-			</div>
-			<div><button class="btn btn-primary btn-reserva" href="#" role="button">
-				<span class="oi oi-plus" style="color: red;"></span> Reservar</button> 
+				<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto</button>
+			</div> 
+			<div><button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar">
+				<span class="oi oi-plus" style="color: red;"></span> Reservar</button>   
 			</div>
 			<div class="card-footer text-muted">30% descuento</div>
 		</div>
 		
+	</div>
+	
+	<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contacto con el Hotel</h5>
+				<button type="button" class="close" data-dismiss="modal" arial-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="recipient-name" class="col-form-label">Tu email:</label>
+						<input type="email" class="form-control" id="recipient-name"></input>
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="col-form-label">Mensaje:</label>
+						<textarea class="form-control" id="message-text"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success">Enviar</button>
+			</div>
+		  </div>	
+		</div>
+	</div>
+
+	<div class="modal fade" id="reservar" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="reservaModalLabel">Reservar</h5>
+				<button type="button" class="close" data-dismiss="modal" arial-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="recipient-name" class="col-form-label">Tu email:</label>
+						<input type="email" class="form-control" id="recipient-name"></input>
+					</div>
+					<div class="form-group">
+						<label for="fecha-inicio" class="col-form-label">Fecha de inicio:</label>
+						<input type="text" class="form-control" id="fecha-inicio"></input>
+					</div>
+					<div class="form-group">
+						<label for="fecha-fin" class="col-form-label">Fecha de fin:</label>
+						<input type="text" class="form-control" id="fecha-fin"></input>
+					</div>
+					<div class="form-group">
+					<label for="huespedes">Cantidad de huespedes:</label>
+					<select class="custom-select mr-sm-2" id="huespedes">
+						<option selected>Seleccione...</option>
+						<option value="1">Uno</option>
+						<option value="2">Dos</option>
+						<option value="3">Tres</option>
+					</select>
+					</div>
+					<div class="form-group">
+						<label for="hab">Tipo de habitacion:</label>
+							<select id="hab" class="form-control">
+								<option selected>Matrimonial</option>
+								<option>Simple</option>
+								<option>Doble</option>
+								<option>Triple</option>
+								<option>Suite</option>
+							</select>
+					</div>
+					<div class="form-group">
+						<label for="comments-text" class="col-form-label">Comentarios adicionales:</label>
+						<textarea class="form-control" id="comments-text"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck">
+							<label class="form-check-label" for="gridCheck">Acepto las politicas de no fumadores.</label>
+						</div>			
+					</div>					
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success">Reservar</button>
+			</div>
+		  </div>	
+		</div>
 	</div>
 	
 	<footer>
